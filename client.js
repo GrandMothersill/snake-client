@@ -16,6 +16,7 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write('Name: GMO');
+    //setInterval(function() { conn.write('Move: up'), 50 });
   });
 
   conn.setEncoding('utf8');
